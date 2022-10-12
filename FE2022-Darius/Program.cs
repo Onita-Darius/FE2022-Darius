@@ -7,14 +7,18 @@ namespace FE2022
         static void Main(string[] args)
         {
             // Se dau a si b
-            int a = 20;
-            int b = 30;
+            int a = 0;
+            int b = 0;
 
             start(a, b);
         }
 
         private static void start(int a, int b)
         {
+            Console.WriteLine("Type the 1st number.");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Type the 2nd number.");
+            b = Convert.ToInt32(Console.ReadLine());
             int count = 0;
             int e = 0;
             int high = 0;
